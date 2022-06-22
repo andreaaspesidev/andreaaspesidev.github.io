@@ -96,6 +96,9 @@
     <script defer src="{{ '/unregister.js' | relative_url }}"></script>
   {% endif %}
 
+  <!-- Cookie consent -->
+  <script src="{{ '/assets/js/cookie-consent.js' | relative_url }}"></script>
+
   <!-- GA -->
   {% if site.google_analytics.id != empty and site.google_analytics.id %}
     {% include google-analytics.html %}
