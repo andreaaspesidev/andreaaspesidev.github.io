@@ -11,7 +11,7 @@ layout: empty
 {% for post in posts %}
 
   <figure class="guide-post col-md-4">
-    <img src="{{ post.image_url }}">
+    <img src="{{ post.image_url }}" alt="post image">
     <figcaption class="figure-caption">
       <h1>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
