@@ -14,7 +14,7 @@ window.cookieconsent.initialise({
         "dismiss": "Got it!",
         "allow": "Allow cookies",
         "link": "Learn more",
-        "href": "andreaaspesi.dev/terms"
+        "href": "/terms"
     },
     onInitialise: function (status) {
         var type = this.options.type;
