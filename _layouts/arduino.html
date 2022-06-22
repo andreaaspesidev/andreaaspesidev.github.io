@@ -1,0 +1,47 @@
+---
+layout: empty
+---
+
+{% include lang.html %}
+
+{% assign posts = site.posts | where_exp: "item", "item.hidden != true and item.categories contains 'Arduino'" | sort: 'order' %}
+
+<div class="guide-grid">
+
+{% for post in posts %}
+
+  <figure class="guide-post col-md-4">
+    <img src="{{ post.image_url }}">
+    <figcaption class="figure-caption">
+      <h1>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h1>
+  
+      <div>
+        <p>
+          {% include no-linenos.html content=post.content %}
+          {{ content | markdownify | strip_html | truncate: 200 | escape }}
+        </p>
+      </div>
+      <div class="post-meta text-muted d-flex">
+        <div class="mr-auto">
+  
+          <!-- posted date -->
+          <i class="far fa-calendar fa-fw"></i>
+          {% include datetime.html date=post.date %}
+        </div>
+      </div> <!-- .post-meta -->
+    </figcaption>
+    
+
+    
+
+  </figure> <!-- .post-review -->
+
+{% endfor %}
+
+</div> <!-- #post-list -->
+
+{% if paginator.total_pages > 0 %}
+  {% include post-paginator.html %}
+{% endif %}

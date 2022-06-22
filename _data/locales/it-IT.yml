@@ -1,0 +1,83 @@
+# The layout text of site
+
+# ----- Commons label -----
+
+layout:
+  post: Post
+  category: Categoria
+  tag: Tag
+
+# The tabs of sidebar
+tabs:
+  # format: <filename_without_extension>: <value>
+  home: Home
+  categories: Categorie
+  tags: Tags
+  archives: Archivio
+  about: Contatti
+
+# the text displayed in the search bar & search results
+search:
+  hint: cerca
+  cancel: Cancella
+  no_results: Oops! Nessun risultato trovato.
+
+panel:
+  lastmod: Aggiornati di Recente
+  trending_tags: Trending Tags
+  toc: Contenuti
+
+copyright:
+  # Shown at the bottom of the post
+  license:
+    template: Questo post è rilasciato sotto licenza :LICENSE_NAME dall'autore.
+    name: CC BY 4.0
+    link: https://creativecommons.org/licenses/by/4.0/
+
+  # Displayed in the footer
+  brief: Diritti riservati.
+  verbose: >-
+    Tranne nei punti in cui diversamente specificato, i posts di questo blog sono rilasciati in licenza
+    Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.
+
+meta:
+
+not_found:
+  statment: Spiacente, abbiamo creato un URL errato o punta a qualcosa che non esiste.
+
+notification:
+  update_found: Una nuova versione del contenuto è disponibile.
+  update: Aggiorna
+
+# ----- Posts related labels -----
+
+post:
+  written_by: Di
+  posted: Pubblicato
+  updated: Aggiornato
+  words: parole
+  pageview_measure: visualizzazioni
+  read_time:
+    unit: min
+    prompt: leggi
+  relate_posts: Letture Aggiuntive
+  share: Condividi
+  button:
+    next: Più recenti
+    previous: Più vecchi
+    copy_code:
+      succeed: Copiato!
+    share_link:
+      title: Copia link
+      succeed: Link copiato con successo!
+  # pinned prompt of posts list on homepage
+  pin_prompt: In Evidenza
+
+# categories page
+categories:
+  category_measure:
+    singular: categoria
+    plural: categorie
+  post_measure:
+    singular: post
+    plural: posts
