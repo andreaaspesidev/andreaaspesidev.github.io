@@ -19,8 +19,12 @@ layout: empty
   
       <div>
         <p>
-          {% include no-linenos.html content=post.content %}
-          {{ content | markdownify | strip_html | truncate: 200 | escape }}
+          {% if post.description %} 
+            {{ post.description }}
+          {% else %}
+            {% include no-linenos.html content=post.content %}
+            {{ content | markdownify | strip_html | truncate: 200 | escape }}
+          {% endif %}
         </p>
       </div>
       <div class="post-meta text-muted d-flex">
