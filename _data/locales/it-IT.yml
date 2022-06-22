@@ -31,14 +31,14 @@ copyright:
   # Shown at the bottom of the post
   license:
     template: Questo post è rilasciato sotto licenza :LICENSE_NAME dall'autore.
-    name: CC BY 4.0
-    link: https://creativecommons.org/licenses/by/4.0/
+    name: CC BY-NC-SA 4.0
+    link: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
   # Displayed in the footer
   brief: Diritti riservati.
   verbose: >-
     Tranne nei punti in cui diversamente specificato, i posts di questo blog sono rilasciati in licenza
-    Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.
+    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License by the author.
 
 meta:
 
