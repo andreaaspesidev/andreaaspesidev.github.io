@@ -4,10 +4,12 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script>
   function loadGAonConsent() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; 
+    var ga = document.createElement('script'); 
+    ga.type = 'text/javascript'; 
     ga.async = true;
-    ga.src = "https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics.id }}"
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    ga.src = "https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics.id }}";
+    var s = document.getElementsByTagName('script')[0]; 
+    s.parentNode.insertBefore(ga, s);
 
     (function() {
       window.dataLayer = window.dataLayer || [];
