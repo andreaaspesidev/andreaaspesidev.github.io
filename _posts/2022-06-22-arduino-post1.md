@@ -21,20 +21,20 @@ Even the smallest writing error (which we call `syntax error`) is not tolerable[
 
 Each programming language identifies a different way to address the *machine* and tell it what to do. A curious reader might wonder why, then there are so many, and not just one.
 
-Actually for each specific *machine* there is only one that hides behind them all[^3]. For the moment, we limit ourselves to observe that each programming language has a *power* and an *expressiveness* different from the others.
+Actually, for each *machine* there is only one that hides behind them all[^3]. For the moment, we limit ourselves to observe that each programming language has a *power* and *expressiveness* different from the others.
 
-> We tend to make a distinction between `low-level` and `high-level` programming languages. As the *level* decreases, we have an increased complexity in explaining how to do a complex operation to the machine, but at the same time we have an increased control over hardware resources. This means we can perform the same operation using for example less memory, or do operations that are not directly possible in a *higher* language.
+> We tend to distinguish between `low-level` and `high-level` programming languages. As the *level* decreases, we have an increased complexity in explaining how to perform a complex operation to the machine, but at the same time we have an increased control over hardware resources. This means we can perform the same operation using - for example - less memory, or do operations not directly possible in a *higher* language.
 {: .prompt-tip}
 
 [^1]: We call them `formal languages` for this reason.
-[^2]: This is due to the fact that we usually transform more sophisticated languages into simpler ones via `compilation`, as we will see later on.
+[^2]: This is because we usually transform more sophisticated languages into simpler ones via `compilation`, as we will see later on.
 [^3]: We call it `ISA` (`Instruction Set Architecture`): for a specific processing unit it specifies the operation it understands, how to write them and the expected results.
 
 ## Arduino Resources
 Arduino is mainly composed of:
 
 - A `CPU`[^4], that is an integrated circuit capable of executing code (the *brain* of Arduino)
-- `Analog and Digital I/O` pins, used by the cpu to interact with the external world
+- `Analog and Digital I/O` pins, used by the CPU to interact with the external world
 - Three types of memory:
   - `Flash memory`, like those of USB sticks, where our code is saved. 
   - `SRAM`, where the code *works* during its execution (a sort of spreadsheet)
@@ -47,11 +47,11 @@ With Arduino, we’re going to learn and use the basics of a programming languag
 
 These are two of the most famous programming languages, with which all the main Operative Systems (Windows, Linux, …) are written, precisely because – especially C – they allow excellent *low-level* management of resources. And with Arduino, as it’s reasonable to expect, resources are much more limited than those of a normal computer.
 
-> From now on, we will only use the Arduino programming language in our codes. Many of the considerations we will make can be easily extended to most languages.
+> From now on, we will only use the Arduino programming language in our codes. Many considerations we will make can be easily extended to most languages.
 {: .prompt-info}
 
 ## How does a “code” work?
-A code is a simple text file written following the rules of the corresponding programming language. To understand *how to write what*, we must first understand how what we write will be read and executed by the cpu.
+A code is a simple text file written following the rules of the corresponding programming language. To understand *how to write what*, we must first understand how what we write will be read and executed by the CPU.
 
 Let’s image a code as a list of instructions (for example the steps of a recipe) – written in order to achieve a specific goal.
 
@@ -60,17 +60,17 @@ Any instruction can be:
 - `Simple`: one of the elementary operations allowed in our language. For example, the operations of comparing (>, <, =, %), reading and writing in SRAM, …
 - `Composite`, or a *sub-recipe*. For example, if we are going to make *pasta with tomato sauce*, the recipe will contain (at least) two sub-recipes (cook pasta, prepare the sauce), each composed of a sequence of elementary steps to achieve that specific goal.
 
-> Note that actually some operations we are now considering simple could be actually executed in more instructions
+> Note that some operations we are now considering simple could be actually executed in more than a single instruction
 {: .prompt-warning}
 
 > This distinction is not academic, but it’s introduced as a simplification for the reader
-{: .prompt-info }
+{: .prompt-info}
 
 
-## Variables: what are they and how to use them
+## Variables: what they are and how to use them
 Every operation, even an elementary one, needs to operate on some data. Let’s imagine the `variables` as *containers* for our data. These data boxes must have a *label* that gives clear information about their content.
 
-The information on the label, as we will see in details shortly, is of two types. I anticipate that the first part will be linked to the content. Among the types of content allowed, we can find:
+The information on the label, as we will see in detail shortly, is of two types. I anticipate that the first part will be linked to the content. Among the types of content allowed, we can find:
 
 - `char`, i.d. variables that can only contain a single character (‘a’, ‘b’, …)
 - `char[]`, an “array” (sequence) of characters called string (we will see it in details in a later article)
