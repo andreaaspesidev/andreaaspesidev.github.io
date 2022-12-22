@@ -152,7 +152,7 @@ $timeline-hover: scale-color($timeline-color, $lightness: 32%);
   }
 
   .timeline-content {
-    padding: 40px 0 70px;
+    padding: 40px 0 50px;
   }
 
   .timeline-title {
@@ -215,7 +215,7 @@ $timeline-hover: scale-color($timeline-color, $lightness: 32%);
     }
 
     .timeline-item {
-      padding-bottom: 70px;
+      padding-bottom: 50px;
       overflow: hidden;
     }
 
@@ -262,7 +262,7 @@ $timeline-hover: scale-color($timeline-color, $lightness: 32%);
     }
 
     .timeline-item.period {
-      padding: 50px 0 90px;
+      padding: 30px 0 55px;
     }
 
     .period .timeline-marker:after {
